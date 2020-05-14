@@ -22,7 +22,7 @@ $(function() {
     start: function() { },
     select: function(item) { },
     unselect: function(item) { },
-    start: function() { },
+    stop: function() { },
 
     distance: 10,
     itemsChange: true,

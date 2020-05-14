@@ -15,8 +15,12 @@ Originally inspired by Google Drive file select.
 ``` javascript
 $(function() {
   $("#container").nuSelectable({
-    items: 'div.blob',
     boxClass: 'nu-selection-box',
+    
+    // jQuery to identify selectable items
+    items: 'div.blob',
+    
+    // Remove/add this class to items upon un/selection
     selectedClass: 'selected',
 
     start: function() { },
@@ -24,7 +28,10 @@ $(function() {
     unselect: function(item) { },
     stop: function() { },
 
+    // Mouse travel before selection box appears
     distance: 10,
+    
+    // Retrieve list of items at each click
     itemsChange: true,
   });
 });

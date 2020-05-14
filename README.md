@@ -1,47 +1,34 @@
 # nuSelectable
-Lightweight alternative to jQuery Selectable. Inspired by Google Drive file select.
+Lightweight alternative to jQuery Selectable. 
+Originally inspired by Google Drive file select.
 
-# Code example
+![Selection](https://imgur.com/TYNp1Lp)
+
+# Example
+``` css
+.nu-selection-box {
+	border: 1px dotted #BBB;
+	background: rgba(0, 0, 0, 0.04);
+	pointer-events: none;
+}
+```
 ``` javascript
 $(function() {
-    $('#item-container').nuSelectable({
-        items: '.item',
-        selectionClass: 'nu-selection-box',
-        selectedClass: 'nu-selected',
-        autoRefresh: true
-    });
-});
+  $("#container").nuSelectable({
+    items: 'div.blob',
+    boxClass: 'nu-selection-box',
+    selectedClass: 'selected',
 
+    start: function() { },
+    select: function(item) { },
+    unselect: function(item) { },
+    start: function() { },
+
+    distance: 10,
+    itemsChange: true,
+  });
+});
 ```
 
-# Screenshots
-
-![Screenshot](https://cloud.githubusercontent.com/assets/13611918/10266308/27381d2e-6a27-11e5-9216-92344b558cb3.png)
-
-# Changes
-- Fix positioning inside positioned containers
-- add onFinish callback
-
 # License
-The MIT License (MIT)
-
-Copyright (c) 2015 Alex Suyun
-Copyright (c) 2018 Carl-Philip Hänsch
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT/Expat

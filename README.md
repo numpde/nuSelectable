@@ -2,7 +2,7 @@
 Lightweight alternative to jQuery Selectable. 
 Originally inspired by Google Drive file select.
 
-![Selection](https://imgur.com/TYNp1Lp)
+![Selection](https://imgur.com/TYNp1Lp.jpg)
 
 # Example
 ``` css

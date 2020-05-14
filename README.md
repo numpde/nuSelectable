@@ -7,9 +7,9 @@ Originally inspired by Google Drive file select.
 # Example
 ``` css
 .nu-selection-box {
-	border: 1px dotted #BBB;
-	background: rgba(0, 0, 0, 0.04);
-	pointer-events: none;
+  border: 1px dotted #BBB;
+  background: rgba(0, 0, 0, 0.04);
+  pointer-events: none;
 }
 ```
 ``` javascript
